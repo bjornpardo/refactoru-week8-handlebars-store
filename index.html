@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<h1>Handlebars Store</h1>
+	<div id="product-container">
+		
+	</div>
+
+	<h2>My Wishlist</h2>
+	<ul id="wishlist">
+	</ul>
+
+	<script id="product-template" type="text/x-handlebars-template">
+		<div class="product">
+			<b>Title:</b> <span class='title'> {{title}} </span>
+			<b>Cost:</b> {{cost}}
+			<a class='add' href='#'>Add to Wishlist</a>
+			<img class='img' src='{{image}}'>			
+		</div>
+	</script>
+
+	<script id="wishlist-template" type="text/x-handlebars-template">
+		<li class='wItem'>Title: {{title}} <a class='remove' href='#'>Remove</a> </li>			
+	</script>
+
+	
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.2/handlebars.min.js"></script>
+  <script src="products-data.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>
