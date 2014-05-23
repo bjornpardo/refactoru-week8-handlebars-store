@@ -21,9 +21,13 @@
 			<b>Title:</b> <span class='title'> {{title}} </span>
 			<b>Cost:</b> {{cost}}
 			<a class='add' href='#'>Add to Wishlist</a>
-			<img class='img' src='{{image}}'>			
+			<img class='img' src='{{image}}'>
+			{{!-- {{if sale}}
+			<s><b>Cost:</b> {{cost}}</s>
+			<b>Sale:</b> {{sale}} --}}		
 		</div>
 	</script>
+
 
 	<script id="wishlist-template" type="text/x-handlebars-template">
 		<li class='wItem'>Title: {{title}} <a class='remove' href='#'>Remove</a> </li>			
